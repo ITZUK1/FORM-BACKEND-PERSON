@@ -1,38 +1,42 @@
 <div class="container">
-    <h2>Formulario de Usuario</h2>
-    <form (ngSubmit)="onSubmit()" #userForm="ngForm" class="mt-4">
-  
+  <h2>Formulario de Usuario</h2>
+
+  <form (ngSubmit)="onSubmit()" #userForm="ngForm" class="mt-4">
       <div class="mb-3">
-        <label for="nombre" class="form-label">Nombre</label>
-        <input type="text" class="form-control" id="nombre" [(ngModel)]="user.nombre" name="nombre" required>
+          <label for="nombre" class="form-label">Nombre</label>
+          <input type="text" class="form-control" id="nombre" [(ngModel)]="user.nombre" name="nombre" required>
       </div>
-  
+      
       <div class="mb-3">
-        <label for="apellido" class="form-label">Apellido</label>
-        <input type="text" class="form-control" id="apellido" [(ngModel)]="user.apellido" name="apellido" required>
+          <label for="apellido" class="form-label">Apellido</label>
+          <input type="text" class="form-control" id="apellido" [(ngModel)]="user.apellido" name="apellido" required>
       </div>
-  
+      
       <div class="mb-3">
-        <label for="edad" class="form-label">Edad</label>
-        <input type="number" class="form-control" id="edad" [(ngModel)]="user.edad" name="edad" required>
+          <label for="edad" class="form-label">Edad</label>
+          <input type="number" class="form-control" id="edad" [(ngModel)]="user.edad" name="edad" required>
       </div>
-  
+      
       <div class="mb-3">
-        <label for="correo" class="form-label">Correo Electrónico</label>
-        <input type="email" class="form-control" id="correo" [(ngModel)]="user.correo" name="correo" required>
+          <label for="correo" class="form-label">Correo Electrónico</label>
+          <input type="email" class="form-control" id="correo" [(ngModel)]="user.correo" name="correo" required>
       </div>
-  
+      
       <div class="mb-3">
-        <label for="telefono" class="form-label">Teléfono</label>
-        <input type="text" class="form-control" id="telefono" [(ngModel)]="user.telefono" name="telefono" required>
+          <label for="telefono" class="form-label">Teléfono</label>
+          <input type="text" class="form-control" id="telefono" [(ngModel)]="user.telefono" name="telefono" required>
       </div>
-  
+      
       <div class="mb-3">
-        <label for="direccion" class="form-label">Dirección</label>
-        <input type="text" class="form-control" id="direccion" [(ngModel)]="user.direccion" name="direccion" required>
+          <label for="direccion" class="form-label">Dirección</label>
+          <input type="text" class="form-control" id="direccion" [(ngModel)]="user.direccion" name="direccion" required>
       </div>
-  
+
       <button type="submit" class="btn btn-primary">Guardar</button>
-    </form>
+  </form>
+
+  <!-- De momento yo tendrán en la vista -->
+  <div *ngIf="message" [ngClass]="{'success': isSuccess, 'error': !isSuccess}" class="message">
+      {{ message }}
   </div>
-  
+</div>
