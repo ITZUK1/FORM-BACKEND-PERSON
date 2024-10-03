@@ -4,6 +4,12 @@ import { DataService } from '../../services/data.service';
 @Component({
   selector: 'app-user-list',
   templateUrl: './user-list.component.html',
+  styles: [`
+    .button-container {
+      display: flex;
+      justify-content: space-between;
+    }
+  `]
 })
 export class UserListComponent implements OnInit {
   users: any[] = [];

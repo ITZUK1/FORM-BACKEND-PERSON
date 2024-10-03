@@ -17,7 +17,11 @@
           <td>{{ user.edad }}</td>
           <td>{{ user.correo }}</td>
           <td>
-            <button class="btn btn-danger" (click)="deleteUser(user.id)">Eliminar</button>
+            <div class="button-container">
+              <button class="btn btn-danger" (click)="deleteUser(user.id)">Eliminar</button>
+
+              <button class="btn btn-danger" (click)="deleteUser(user.id)">Actualizar</button>
+            </div>
           </td>
         </tr>
       </tbody>
