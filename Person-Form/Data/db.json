@@ -1,87 +1,13 @@
 {
   "usuarios": [
     {
-      "id": 1,
-      "nombre": "miguel",
-      "apellido": "bejarano",
-      "edad": 19,
-      "correo": "mixato86@gamil.com",
-      "telefono": "3204208227",
-      "direccion": {
-        "calle": "Av. Principal",
-        "numero": 123,
-        "ciudad": "Ciudad de México",
-        "pais": "México"
-      },
-      "intereses": [
-        "programación",
-        "música",
-        "deportes"
-      ],
-      "fecha_nacimiento": "1994-05-15"
-    },
-    {
-      "id": 2,
-      "nombre": "miguel",
-      "apellido": "bejarano",
-      "edad": 19,
-      "correo": "mixato86@gamil.com",
-      "telefono": "3204208227",
-      "direccion": {
-        "calle": "Av. Principal",
-        "numero": 123,
-        "ciudad": "Ciudad de México",
-        "pais": "México"
-      },
-      "intereses": [
-        "programación",
-        "música",
-        "deportes"
-      ],
-      "fecha_nacimiento": "1994-05-15"
-    },
-    {
-      "id": 2,
-      "nombre": "torres",
-      "apellido": "bejarano",
-      "edad": 19,
-      "correo": "mixato86@gamil.com",
-      "telefono": "3204208227",
-      "direccion": {
-        "calle": "Av. Principal",
-        "numero": 123,
-        "ciudad": "Ciudad de México",
-        "pais": "México"
-      },
-      "intereses": [
-        "programación",
-        "música",
-        "deportes"
-      ],
-      "fecha_nacimiento": "1994-05-15"
-    },
-    {
-      "0": {
-        "id": 1,
-        "nombre": "Juan Pérez",
-        "apellido": "García",
-        "edad": 30,
-        "correo": "juan.perez@example.com",
-        "telefono": "1234567890",
-        "direccion": {
-          "calle": "Av. Principal",
-          "numero": 123,
-          "ciudad": "Ciudad de México",
-          "pais": "México"
-        },
-        "intereses": [
-          "programación",
-          "música",
-          "deportes"
-        ],
-        "fecha_nacimiento": "1994-05-15"
-      },
-      "id": "f4ae"
+      "id": "76ce",
+      "nombre": "MIGUEL",
+      "apellido": "VERDUGO",
+      "edad": 18,
+      "correo": "mixato86@gmail.com",
+      "telefono": "3028104538",
+      "direccion": "Calle 88i 7-d 35 Este"
     }
   ]
 }
