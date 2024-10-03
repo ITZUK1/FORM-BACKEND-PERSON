@@ -1,0 +1,26 @@
+<div class="container mt-4">
+    <h2>Lista de Usuarios</h2>
+    <table class="table table-striped">
+      <thead>
+        <tr>
+          <th>Nombre</th>
+          <th>Apellido</th>
+          <th>Edad</th>
+          <th>Correo</th>
+          <th>Acciones</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let user of users">
+          <td>{{ user.nombre }}</td>
+          <td>{{ user.apellido }}</td>
+          <td>{{ user.edad }}</td>
+          <td>{{ user.correo }}</td>
+          <td>
+            <button class="btn btn-danger" (click)="deleteUser(user.id)">Eliminar</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  
