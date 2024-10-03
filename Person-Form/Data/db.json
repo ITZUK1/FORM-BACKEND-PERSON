@@ -1,31 +1,3 @@
 {
-  "usuarios": [
-    {
-      "id": "c38f",
-      "nombre": "MIGUEL",
-      "apellido": "VERDUGO",
-      "edad": 12,
-      "correo": "valentina.verdugo@gmail.com",
-      "telefono": "3028104538",
-      "direccion": "Calle 88i 7-d 35 Este"
-    },
-    {
-      "id": "eb37",
-      "nombre": "angel",
-      "apellido": "VERDUGO",
-      "edad": 34,
-      "correo": "valentina.verdugo@gmail.com",
-      "telefono": "3028104538",
-      "direccion": "Calle 88i 7-d 35 Este"
-    },
-    {
-      "id": "b3fd",
-      "nombre": "12233",
-      "apellido": "12123123",
-      "edad": 23,
-      "correo": "mixato86@gmail.com",
-      "telefono": "3028104538",
-      "direccion": "Calle 88i 7-d 35 Este"
-    }
-  ]
+  "usuarios": []
 }
