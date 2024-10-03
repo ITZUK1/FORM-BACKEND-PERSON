@@ -7,6 +7,9 @@ import { AppComponent } from './app.component';
 import { UserFormComponent } from './components/user-form/user-form.component';
 import { UserListComponent } from './components/user-list/user-list.component';
 import { AppRoutingModule } from './app-routing.module';
+import { CommonModule } from '@angular/common';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { ReactiveFormsModule } from '@angular/forms'; //
 
 @NgModule({
   declarations: [
@@ -18,7 +21,10 @@ import { AppRoutingModule } from './app-routing.module';
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    HttpClientModule  // Asegúrate de agregar HttpClientModule aquí
+    HttpClientModule,
+    CommonModule,
+    NgbModule,
+    ReactiveFormsModule  // Asegúrate de agregar HttpClientModule aquí
   ],
   providers: [],
   bootstrap: [AppComponent]
