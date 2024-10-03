@@ -1,19 +1,10 @@
 {
   "usuarios": [
     {
-      "id": "9ce2",
+      "id": "284c",
       "nombre": "MIGUEL",
       "apellido": "VERDUGO",
-      "edad": 12,
-      "correo": "mixato86@gmail.com",
-      "telefono": "3028104538",
-      "direccion": "Calle 88i 7-d 35 Este"
-    },
-    {
-      "id": "8732",
-      "nombre": "lucas",
-      "apellido": "bar",
-      "edad": 2,
+      "edad": 19,
       "correo": "mixato86@gmail.com",
       "telefono": "3028104538",
       "direccion": "Calle 88i 7-d 35 Este"

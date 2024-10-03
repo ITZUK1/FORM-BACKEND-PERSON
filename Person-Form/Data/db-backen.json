@@ -1,18 +1,11 @@
 [
-    {
-      "id": 1,
-      "nombre": "Juan Pérez",
-      "apellido": "García",
-      "edad": 30,
-      "correo": "juan.perez@example.com",
-      "telefono": "1234567890",
-      "direccion": {
-        "calle": "Av. Principal",
-        "numero": 123,
-        "ciudad": "Ciudad de México",
-        "pais": "México"
-      },
-      "intereses": ["programación", "música", "deportes"],
-      "fecha_nacimiento": "1994-05-15"
-    }
+  {
+    "id": "0000",
+    "nombre": "rodolfo",
+    "apellido": "barco",
+    "edad": 60,
+    "correo": "rodolfo@gmail.com",
+    "telefono": "3028104538",
+    "direccion": "Calle 88i 7-d 35 Este"
+  }
   ]
