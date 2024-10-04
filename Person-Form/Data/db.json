@@ -1,13 +1,3 @@
 {
-  "usuarios": [
-    {
-      "nombre": "miguel",
-      "apellido": "bejarano",
-      "edad": 19,
-      "correo": "mixato86@gmail.com",
-      "telefono": 3028104538,
-      "direccion": "calle 300",
-      "id": "5ced"
-    }
-  ]
+  "usuarios": []
 }
