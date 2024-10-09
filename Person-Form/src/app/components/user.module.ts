@@ -7,10 +7,10 @@ import { UserListComponent } from './user-list/user-list.component';
 
 @NgModule({
   declarations: [
-    UserListComponent, // Declare UserListComponent
+    UserListComponent, 
   ],
   imports: [
-    CommonModule, // Necesario para directivas comunes
+    CommonModule,
     ReactiveFormsModule, 
     NgbModule, // Para usar NgbModal
   ],
