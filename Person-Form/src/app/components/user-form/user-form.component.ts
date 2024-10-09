@@ -20,24 +20,22 @@ export class UserFormComponent {
  
   constructor(private dataService: DataService) {}
  
-  // Validar solo letras y espacios
   validateName(event: any) {
     const input = event.target.value;
-    event.target.value = input.replace(/[^a-zA-ZÀ-ÿ\s]/g, ''); // Eliminar todo lo que no sea letra o espacio
+    event.target.value = input.replace(/[^a-zA-ZÀ-ÿ\s]/g, ''); 
   }
  
   validateLastName(event: any) {
     const input = event.target.value;
-    event.target.value = input.replace(/[^a-zA-ZÀ-ÿ\s]/g, ''); // Eliminar todo lo que no sea letra o espacio
+    event.target.value = input.replace(/[^a-zA-ZÀ-ÿ\s]/g, ''); 
   }
  
-  // Validar si los campos de nombre y apellido contienen solo letras y espacios
+ 
   isValidName(name: string): boolean {
-    return /^[a-zA-ZÀ-ÿ\s]+$/.test(name); // Expresión regular para letras y espacios
+    return /^[a-zA-ZÀ-ÿ\s]+$/.test(name); 
   }
  
   onSubmit() {
-    // Verificamos si los campos contienen solo letras y espacios
     if (!this.isValidName(this.user.nombre)) {
       this.message = 'El nombre contiene caracteres inválidos.';
       this.isSuccess = false;
@@ -50,15 +48,12 @@ export class UserFormComponent {
       return;
     }
  
-    // Verificamos si todos los campos están completos
     if (this.user.nombre && this.user.apellido && this.user.edad && this.user.correo && this.user.telefono && this.user.direccion) {
-      // Todos los datos están completos, enviamos al servidor
       this.dataService.addUser(this.user).subscribe(
         (response: any) => {
           console.log('Usuario creado:', response);
           this.message = 'Los datos se guardaron correctamente.';
           this.isSuccess = true;
-          // Aquí puedes reiniciar el formulario o hacer otras acciones
         },
         (error) => {
           console.error('Error al crear el usuario:', error);
@@ -67,7 +62,6 @@ export class UserFormComponent {
         }
       );
     } else {
-      // Datos faltantes
       this.message = 'Por favor, complete todos los campos requeridos.';
       this.isSuccess = false;
     }
