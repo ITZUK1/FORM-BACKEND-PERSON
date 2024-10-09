@@ -15,32 +15,31 @@ import { FormGroup, FormBuilder, Validators } from '@angular/forms';
 })
 
 export class UserListComponent implements OnInit {
-  users: any[] = [];  // Lista de usuarios
-  selectedUser: any = {}; // Usuario seleccionado para editar
-  userForm: FormGroup;  // Formulario para los usuarios
-
+  users: any[] = [];  
+  selectedUser: any = {}; 
+  userForm: FormGroup; 
   constructor(
     private dataService: DataService,
     private modalService: NgbModal,
     private fb: FormBuilder
   ) {
-    // Inicializar el formulario reactivo
+   
     this.userForm = this.fb.group({
       nombre: ['', Validators.required],
       apellido: ['', Validators.required],
       edad: ['', [Validators.required, Validators.min(1)]],
       correo: ['', [Validators.required, Validators.email]],
-      telefono: ['', [Validators.required, Validators.pattern(/^[0-9]{7,10}$/)]], // Teléfono entre 7 y 10 dígitos
+      telefono: ['', [Validators.required, Validators.pattern(/^[0-9]{7,10}$/)]], 
       direccion: ['', Validators.required]
     });
   }
 
   ngOnInit() {
-    this.loadUsers(); // Carga los usuarios al iniciar el componente
+    this.loadUsers(); 
   }
 
   loadUsers() {
-    // Obtiene los usuarios a través del servicio
+   
     this.dataService.getUsers().subscribe(data => {
       this.users = data;
     });
@@ -68,14 +67,14 @@ export class UserListComponent implements OnInit {
   }
 
   onSubmit() {
-    // Maneja el envío del formulario
+   
     if (this.userForm.valid) {
       this.dataService.updateUser(this.selectedUser.id, this.userForm.value).subscribe(() => {
         const index = this.users.findIndex(user => user.id === this.selectedUser.id);
         if (index !== -1) {
           this.users[index] = { ...this.selectedUser, ...this.userForm.value };
         }
-        this.modalService.dismissAll(); // Cierra el modal al finalizar
+        this.modalService.dismissAll(); 
       });
     }
   }
